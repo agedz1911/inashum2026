@@ -21,7 +21,7 @@
                 </div>
                 <p class="italic mt-3 text-[#302b88] font-bold md:text-xl">"Collaboration, Innovation, Impact "</p>
                 <p class="text-[#302b88] mt-3">
-                    July 29<sup>th</sup> - 1<sup>st</sup> August, 2026 <br> Fatmawati Hospital & Swissôtel Jakarta PIK
+                    July 28<sup>th</sup> - 1<sup>st</sup> August, 2026 <br> Fatmawati Hospital & Swissôtel Jakarta PIK
                     Avenue, Jakarta
                 </p>
                 <div class="mt-7">
@@ -104,7 +104,7 @@
                                 Wednesday to Saturday
                             </p>
                             <p class="text-sm text-gray-500 truncate">
-                                July 29<sup>th</sup> - August 1<sup>st</sup>, 2026
+                                July 28<sup>th</sup> - August 1<sup>st</sup>, 2026
                             </p>
                         </div>
                     </div>
@@ -172,7 +172,7 @@
                         <div class="w-full border-e border-opacity-35 border-white">
                             <div class="border-b border-opacity-25 border-white md:border-b-0 text-center py-5 px-2">
                                 <h1 class="text-white m-0 text-4xl md:text-5xl font-semibold"><span class="num"
-                                        data-val="50"></span><span>+</span>
+                                        data-val="15"></span><span>+</span>
                                 </h1>
                                 <p class="text-xs text-white">Symposium</p>
                             </div>
@@ -180,7 +180,7 @@
                         <div class="w-full border-e border-opacity-35 border-white">
                             <div class="border-b border-opacity-25 border-white md:border-b-0 text-center py-5 px-2">
                                 <h1 class="text-white m-0 text-4xl md:text-5xl font-semibold"><span class="num"
-                                        data-val="10"></span><span>+</span>
+                                        data-val="5"></span><span>+</span>
                                 </h1>
                                 <p class="text-xs text-white">Workshop & Live Surgeries </p>
                             </div>
@@ -188,7 +188,7 @@
                         <div class="w-full border-e border-opacity-35 border-white">
                             <div class="border-b border-opacity-25 border-white md:border-b-0 text-center py-5 px-2">
                                 <h1 class="text-white m-0 text-4xl md:text-5xl font-semibold"><span class="num"
-                                        data-val="50"></span><span>+</span>
+                                        data-val="30"></span><span>+</span>
                                 </h1>
                                 <p class="text-xs text-white">Topics</p>
                             </div>
@@ -286,7 +286,7 @@
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <iframe class="rounded-lg w-full h-full"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.76137530253!2d106.79363917483678!3d-6.295058461611884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1e653901bc1%3A0xc0478e03aaa208d7!2sRumah%20Sakit%20Fatmawati!5e0!3m2!1sid!2sid!4v1767933662676!5m2!1sid!2sid"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.76137530253!2d106.79363917483678!3d-6.285058461611884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1e653901bc1%3A0xc0478e03aaa208d7!2sRumah%20Sakit%20Fatmawati!5e0!3m2!1sid!2sid!4v1767933662676!5m2!1sid!2sid"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
@@ -331,7 +331,7 @@
         const currentTime = new Date();
 
         // Set new date 30 days from now
-        const targetTime = new Date(2026, 07, 29, 8, 0, 0);
+        const targetTime = new Date(2026, 7, 28, 8, 0, 0);
 
         // Update countdown time
         function updateCountdown() {

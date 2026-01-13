@@ -34,7 +34,7 @@
                         <div class="order-1 lg:order-2 p-2 ">
                             <div class="flex flex-col ">
                                 <div class="pr-2">
-                                    <div class="pb-4  text-justify flex flex-col gap-2 text-gray-300">
+                                    <div class="pb-4  text-justify flex flex-col gap-2 text-gray-900">
                                         {!! str($welcomeMessage->description)->markdown()->sanitizeHtml() !!}
 
                                     </div>
@@ -69,7 +69,7 @@
                         <div class="order-1 lg:order-1 p-2 ">
                             <div class="flex flex-col ">
                                 <div class="pr-2">
-                                    <div class="pb-4  text-justify flex flex-col gap-2 text-gray-300">
+                                    <div class="pb-4  text-justify flex flex-col gap-2 text-gray-900">
                                         {!! str($welcomeMessage->description)->markdown()->sanitizeHtml() !!}
 
                                     </div>

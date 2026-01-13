@@ -20,7 +20,7 @@
                 <div class="drawer-content">
                     <!-- Page content here -->
                     <label for="my-drawer-4"
-                        class="drawer-button btn bg-purple-700 hover:bg-indigo-600 text-white rounded-lg px-3"><i
+                        class="drawer-button btn rounded-lg px-3"><i
                             class="fa-solid fa-filter"></i> Filter</label>
                 </div>
                 <div class="drawer-side">
@@ -100,24 +100,24 @@
             <div class="w-full lg:w-3/4 order-2 lg:order-1">
                 @foreach ($uniqDates as $date)
                 <div class="text-center lg:text-start border-t border-dashed pt-2">
-                    <h2 class="text-lg font-semibold uppercase text-[#92278F] tracking-wider">
+                    <h2 class="text-lg font-semibold uppercase text-[#b9608d] tracking-wider">
                         {{\Carbon\Carbon::parse($date)->format('l, d F')}}
                     </h2>
                 </div>
                 @foreach ($uniqCategories as $item)
                 @if (
-                !($date == '2025-07-30' && ($item == 'Symposium' || $item == 'Free Paper' || $item == 'Research Proposal' || $item == 'E-Poster' || $item == 'Master Class' || $item == 'Video Parade')) &&
-                !($date == '2025-07-31' && ($item == 'Workshop' || $item == 'Master Class' || $item == 'Video Parade')) &&
-                !($date == '2025-08-01' && ($item == 'Workshop' || $item == 'Research Proposal')) &&
-                !($date == '2025-08-02' && ($item == 'Free Paper' || $item == 'Research Proposal' || $item == 'E-Poster' || $item == 'Master Class'))
+                !($date == '2026-07-29' && ($item == 'Symposium' || $item == 'Master Class' || $item == 'Scientific Competition')) &&
+                !($date == '2026-07-30' && ($item == 'Symposium' || $item == 'Master Class' || $item == 'Scientific Competition')) &&
+                !($date == '2026-07-31' && ($item == 'Workshop' || $item == 'Master Class' || $item == 'Scientific Competition')) &&
+                !($date == '2026-08-01' && ($item == 'Workshop' || $item == 'Scientific Competition'))
                 )
                 <p class="font-semibold tracking-wider my-5"><i
-                        class="fa fa-angle-right text-sm text-purple-700 font-semibold"></i> {{$item}}</p>
+                        class="fa fa-angle-right text-sm font-semibold"></i> {{$item}}</p>
                 @endif
                 @foreach ($atglances as $atglance)
                 @if ($atglance->category_sesi == $item && $atglance->date == $date)
 
-                <div class="collapse bg-base-100 border border-base-300">
+                <div class="collapse bg-base-100 border border-base-300 my-2">
                     <input type="radio" name="my-accordion-1" />
                     <div class="collapse-title font-semibold">{{$atglance->title_ses}} - <span class="text-xs"><i
                                 class="fa fa-map-marker text-[#9E1F63]"></i> {{$atglance->room}} </span></div>

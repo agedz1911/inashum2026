@@ -5,7 +5,7 @@
                 <i class="fa fa-user inline-block text-4xl stroke-current"></i>
             </div>
             <div class="stat-title font-semibold">Secretariat</div>
-            <div class="stat-desc">Ms. Sarah</div>
+            <div class="stat-desc">Ms. Ardelia / Ms. Evi Dearny</div>
         </div>
 
         <div class="stat">
@@ -32,7 +32,7 @@
                 <i class="fa fa-envelope inline-block text-4xl stroke-current"></i>
             </div>
             <div class="stat-title font-semibold">Email</div>
-            <div class="stat-desc hover:underline hover:text-primary"><a href="mailto:asmiua2026@pharma-pro.com">asmiua2026@pharma-pro.com</a></div>
+            <div class="stat-desc hover:underline hover:text-primary"><a href="mailto:inashumposdos@pharma-pro.com ">inashumposdos@pharma-pro.com </a></div>
         </div>
 
         <div class="stat">
@@ -41,8 +41,8 @@
             </div>
             <div class="stat-title font-semibold">Whatsapp</div>
             <div class="stat-desc">
-                <a class="hover:underline hover:text-primary" target="_blank" href="https://wa.me/+628170032730"> +62 817-0032-730 (Sarah) </a> <br>
-                <!-- <a class="hover:underline hover:text-primary" target="_blank" href="https://wa.me/+6285215510055"> +62 852-1551-0055 (Isma) </a> -->
+                <a class="hover:underline hover:text-primary" target="_blank" href="https://wa.me/+6281315809160"> +62 813-1580-9160 (Ardelia) </a> <br>
+                <a class="hover:underline hover:text-primary" target="_blank" href="https://wa.me/+628111018517"> +62 811-1018-517 (Evi Dearny) </a>
             </div>
         </div>
         <div class="stat">

@@ -34,6 +34,7 @@ class RegistrationResource extends Resource
                     ->options([
                         'symposium' => 'Symposium',
                         'workshop' => 'Workshop',
+                        'workshop microsurgery' => 'Workshop microsurgery ',
                         'master class' => 'Master Class',
                     ])
                     ->native(false),
