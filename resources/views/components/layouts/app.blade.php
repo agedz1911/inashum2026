@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>{{ $title ?? 'ASMIUA' }}</title>
+    <title>{{ $title ?? 'INASHUM - INAPOS - IDOS' }}</title>
     <meta name="description" content="49 Annual Scientific Meeting of Indonesian Urological Association" />
     <meta name="keywords" content="urology, urology education, urological, indonesia urologi, iaui, incontinence urology, pan pasific urology, ppcs, PPCS, continence care" />
     <meta name="author" content="AV-PRO" />
