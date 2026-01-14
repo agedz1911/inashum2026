@@ -26,9 +26,9 @@
                                 Late / Onsite Registration <br>
                                 After 30 March 2026
                             </th>
-                            <th scope="col" class="px-6 py-3">
+                            {{-- <th scope="col" class="px-6 py-3">
                                 Onsite Registration
-                            </th>
+                            </th> --}}
 
                         </tr>
                     </thead>
@@ -41,16 +41,16 @@
                             </th>
                             <td class="px-6 py-4 text-center">
                                 IDR {{$regLocal->early_bird_reg != 0 ? number_format($regLocal->early_bird_reg,
-                                0, ',', '.') : 'Free'}}
+                                0, ',', '.') : 'to be announce'}}
                             </td>
                             <td class="px-6 py-4 text-center">
                                 IDR {{$regLocal->normal_reg != 0 ? number_format($regLocal->normal_reg, 0, ',',
-                                '.') : 'Free'}}
+                                '.') : 'to be announce'}}
                             </td>
-                            <td class="px-6 py-4 text-center">
+                            {{-- <td class="px-6 py-4 text-center">
                                 IDR {{$regLocal->onsite_reg != 0 ? number_format($regLocal->onsite_reg, 0, ',',
-                                '.'): 'Free'}}
-                            </td>
+                                '.'): 'to be announce'}}
+                            </td> --}}
                         </tr>
                         @endif
                         @endforeach
@@ -75,10 +75,10 @@
                                 29 & 30 July, 2026 <br>
                                 Fatmawati Hospital, Jakarta
                             </th>
-                            <th scope="col" class="px-6 py-3">
+                            {{-- <th scope="col" class="px-6 py-3">
                                 Late / Onsite Registration <br>
                                 After 30 March 2026
-                            </th>
+                            </th> --}}
                         </tr>
                     </thead>
                     <tbody>
@@ -93,10 +93,10 @@
                                 number_format($regLocal->early_bird_reg, 0, ',', '.') : 'to be announce'}}
 
                             </td>
-                            <td class="px-6 py-4 text-center">
+                            {{-- <td class="px-6 py-4 text-center">
                                 {{$regLocal->early_bird_reg != 0 ? 'IDR ' .
                                 number_format($regLocal->normal_reg, 0, ',', '.') : ''}}
-                            </td>
+                            </td> --}}
 
                         </tr>
                         @endif
@@ -122,10 +122,10 @@
                                 30 July, 2026 <br>
                                 Zeiss Office
                             </th>
-                            <th scope="col" class="px-6 py-3">
+                            {{-- <th scope="col" class="px-6 py-3">
                                 Late / Onsite Registration <br>
                                 After 30 March 2026
-                            </th>
+                            </th> --}}
                         </tr>
                     </thead>
                     <tbody>
@@ -140,10 +140,10 @@
                                 number_format($regLocal->early_bird_reg, 0, ',', '.') : 'to be announce'}}
 
                             </td>
-                            <td class="px-6 py-4 text-center">
+                            {{-- <td class="px-6 py-4 text-center">
                                 {{$regLocal->early_bird_reg != 0 ? 'IDR ' .
                                 number_format($regLocal->normal_reg, 0, ',', '.') : ''}}
-                            </td>
+                            </td> --}}
 
                         </tr>
                         @endif
@@ -170,9 +170,9 @@
                                 1 August 2026
                                 Swissôtel Jakarta PIK Avenue, Jakarta
                             </th>
-                            <th scope="col" class="px-6 py-3">
+                            {{-- <th scope="col" class="px-6 py-3">
                                 Nurse / Medical Students
-                            </th>
+                            </th> --}}
 
                         </tr>
                     </thead>
@@ -188,11 +188,11 @@
                                 number_format($regLocal->early_bird_reg,
                                 0, ',', '.') : 'to be announce'}}
                             </td>
-                            <td class="px-6 py-4 text-center">
+                            {{-- <td class="px-6 py-4 text-center">
                                 {{$regLocal->normal_reg != 0 ? 'IDR' . number_format($regLocal->normal_reg, 0,
                                 ',',
                                 '.') : ''}}
-                            </td>
+                            </td> --}}
 
                         </tr>
                         @endif
