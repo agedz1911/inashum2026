@@ -72,7 +72,7 @@
                                 Category
                             </th>
                             <th scope="col" class="px-6 py-3">
-                                29 & 30 July, 2026 <br>
+                                28, 29 & 30 July, 2026 <br>
                                 Fatmawati Hospital, Jakarta
                             </th>
                             {{-- <th scope="col" class="px-6 py-3">
@@ -282,7 +282,7 @@
                                         Category
                                     </th>
                                     <th scope="col" class="px-6 py-3">
-                                        29 & 30 July, 2026 <br>
+                                        28, 29 & 30 July, 2026 <br>
                                         Fatmawati Hospital, Jakarta
                                     </th>
                                     <th scope="col" class="px-6 py-3">
