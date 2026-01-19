@@ -16,11 +16,11 @@
                         <div class="order-2 lg:order-1 p-2">
                             <div
                                 class="w-full justify-center lg:flex-row flex flex-col items-center lg:items-end gap-2">
-                                <div class="avatar">
+                                {{-- <div class="avatar">
                                     <img src="{{$welcomeMessage->image ? asset('storage/' . $welcomeMessage->image) : "
                                         assets/images/speaker.jpg"}}" alt="{{$welcomeMessage->name}}"
                                         class="w-full max-w-52 shadow-lg rounded-lg ">
-                                </div>
+                                </div> --}}
                                 <div class="p-4 rounded-lg bg-[#b9608d] w-full max-w-sm">
                                     <div class="ps-4 border-s border-[#b9608d] border-spacing-7">
                                         <p class="text-white text-xs italic">" {{$welcomeMessage->title}}
@@ -51,11 +51,11 @@
                         <div class="order-2 lg:order-2 p-2">
                             <div
                                 class="w-full justify-center lg:flex-row flex flex-col items-center lg:items-end gap-2">
-                                <div class="avatar">
+                                {{-- <div class="avatar">
                                     <img src="{{$welcomeMessage->image ? asset('storage/' . $welcomeMessage->image) : "
                                         assets/images/speaker.jpg"}}" alt="{{$welcomeMessage->name}}"
                                         class="w-full max-w-52 shadow-lg rounded-lg ">
-                                </div>
+                                </div> --}}
                                 <div class="p-4 rounded-lg bg-[#b9608d] w-full max-w-sm">
                                     <div class="ps-4 border-s border-[#b9608d] border-spacing-7">
                                         <p class="text-white text-xs italic">" {{$welcomeMessage->title}}
