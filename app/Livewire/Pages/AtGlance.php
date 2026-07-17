@@ -14,6 +14,7 @@ class AtGlance extends Component
 {
     public $atglances;
 
+    public $duadelapan;
     public $duasembilan;
     public $tigapuluh;
     public $tigapuluhsatu;
@@ -23,6 +24,7 @@ class AtGlance extends Component
     public function mount()
     {
         $this->atglances = ScheduleSession::all();
+        $this->duadelapan = $this->atglances->where('date', '2026-07-28')->sortBy('no_urut');
         $this->duasembilan = $this->atglances->where('date', '2026-07-29')->sortBy('no_urut');
         $this->tigapuluh = $this->atglances->where('date', '2026-07-30')->sortBy('no_urut');
         $this->tigapuluhsatu = $this->atglances->where('date', '2026-07-31')->sortBy('no_urut');

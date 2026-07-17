@@ -48,7 +48,10 @@ class ScheduleSessionResource extends Resource
                 TextInput::make('time'),
                 Select::make('room')
                     ->options([
-                        'Fatmawati Hospital' => 'Fatmawati Hospital',
+                        'Fatmawati Hospital 1' => 'Fatmawati Hospital 1',
+                        'Fatmawati Hospital 2' => 'Fatmawati Hospital 2',
+                        'Fatmawati Hospital 3' => 'Fatmawati Hospital 3',
+                        'Fatmawati Hospital 4' => 'Fatmawati Hospital 4',
                         'Zeiss Office' => 'Zeiss Office',
                         'Zurich Ballroom' => 'Zurich Ballroom',
                         'Lausanne Ballroom I' => 'Lausanne Ballroom I',

@@ -224,36 +224,7 @@
     {{--
     <livewire:section.competition /> --}}
 
-    <section class="w-full pt-24 pb-3 px-2 lg:px-4 ">
-        <div class="border-b-2 border-dashed border-[#302b88]/50 pb-10">
-            <div class="">
-                <div class="text-center pb-6 w-60 m-auto">
-                    {{-- <span class="mb-1  text-sm">49<sup>th</sup> ASMIUA</span> --}}
-                    <h2 class="mb-1 text-[#302b88] text-xl md:text-3xl font-bold uppercase">SPONSors</h2>
-                </div>
-                <div class="mt-10">
-                    <div class="grid grid-cols-2 md:grid-cols-5 gap-4 items-center justify-center">
-                        @foreach ($sponsors as $sponsor)
-                        <div class="p-0 border-r border-gray-300 last:border-0">
-                            <div class="p-2 opacity-75 hover:opacity-100 text-center">
-                                <a href="{{$sponsor->website ? $sponsor->website : 'javascript:void(0)'}}"
-                                    target="_blank">
-                                    {!! $sponsor->logo ? '<img src="' . asset('storage/' . $sponsor->logo) . '"
-                                        class="img-fluid" alt="' . $sponsor->company . '" />' : '<small
-                                        class="text-center text-accent">' . $sponsor->company . '</small>' !!}
-                                </a>
-                            </div>
-                        </div>
-                        @endforeach
-                    </div>
-                </div>
-                <div class="text-center my-10">
-                    <a class="btn bg-[#b9608d] hover:bg-[#a45b80] text-white rounded-xl uppercase" href="/sponsors">VIEW
-                        MORE Sponsors</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <livewire:section.carousel-sponsor />
 
     <section class="w-full pt-24 pb-3 px-2 lg:px-4">
         <div class="text-center mb-5 pb-10">
