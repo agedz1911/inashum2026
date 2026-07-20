@@ -913,7 +913,7 @@
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
-                                                                @foreach ($Zurich1->schedules as $schedule)
+                                                                @foreach ($Basel1->schedules as $schedule)
                                                                 <tr>
                                                                     <th scope="row">{{$schedule->time_speaker}}</th>
                                                                     <td>{{$schedule->topic_title}}</td>
