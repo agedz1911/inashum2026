@@ -55,7 +55,8 @@ class ScheduleSessionResource extends Resource
                         'Zeiss Office' => 'Zeiss Office',
                         'Zurich Ballroom' => 'Zurich Ballroom',
                         'Lausanne Ballroom I' => 'Lausanne Ballroom I',
-                        'Lausanne Ballroom II' => 'Lausanne Ballroom II' 
+                        'Lausanne Ballroom II' => 'Lausanne Ballroom II',
+                        'Basel 1 Room' => 'Basel 1 Room', 
                     ]),
                 TextInput::make('moderator'),
                 Textarea::make('panelist'),

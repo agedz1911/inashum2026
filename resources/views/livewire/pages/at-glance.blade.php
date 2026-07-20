@@ -790,6 +790,7 @@
                                     <tr class="text-base font-semibold mb-2">
 
                                         <th>Zurich Ballroom</th>
+                                        <th>Basel 1 Room</th>
                                         <th>Lausanne Ballroom I</th>
                                         <th>Lausanne Ballroom II</th>
                                     </tr>
@@ -832,6 +833,74 @@
                                                             {{$Zurich1->title_ses}}</span></p>
                                                     <p class="text-gray-700">Moderator : <span class="">
                                                             {{$Zurich1->moderator}}
+                                                        </span></p>
+                                                    <div class="overflow-x-auto mt-5">
+                                                        <table class="table text-gray-700">
+                                                            <!-- head -->
+                                                            <thead>
+                                                                <tr>
+                                                                    <th style="width: 18%">Time</th>
+                                                                    <th>Topic</th>
+                                                                    <th>Speaker</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                @foreach ($Zurich1->schedules as $schedule)
+                                                                <tr>
+                                                                    <th scope="row">{{$schedule->time_speaker}}</th>
+                                                                    <td>{{$schedule->topic_title}}</td>
+                                                                    <td>{{$schedule->speaker}}</td>
+                                                                </tr>
+                                                                @endforeach
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <div class="modal-action">
+                                                        <form method="dialog">
+                                                            <!-- if there is a button in form, it will close the modal -->
+                                                            <button class="btn">Close</button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </dialog>
+                                            @endforeach
+                                        </td>
+                                        <td class="align-top">
+                                            @foreach ($satu as $Basel1)
+                                            @if ($Basel1->room == 'Basel 1 Room')
+                                            <button class="hover:shadow-lg hover:shadow-slate-300 block w-full my-1"
+                                                onclick="Basel1{{$loop->index}}.showModal()">
+                                                <div class="border px-0 py-4 w-full rounded-md bg-slate-200 ">
+                                                    <div class="badge badge-sm badge-info mb-2">{{$Basel1->category_sesi}}</div>
+                                                    <br>
+                                                    {{$Basel1->time}} <br>
+                                                    {{$Basel1->title_ses}}
+                                                </div>
+                                            </button>
+                                            @endif
+
+                                            <dialog id="Basel1{{$loop->index}}" class="modal">
+                                                <div class="modal-box w-11/12 max-w-5xl text-start">
+                                                    <div class="flex justify-between mb-3 text-gray-700">
+                                                        <div class="text-start">
+                                                            <h3 class="mb-0">Date: <span class="">
+                                                                    {{\Carbon\Carbon::parse($Basel1->date)->format('d
+                                                                    F
+                                                                    Y')}}</span></h3>
+                                                            <h3 class="mb-0">Time: <span class="">
+                                                                    {{$Basel1->time}}</span></h3>
+                                                        </div>
+                                                        <div>
+                                                            <p class="">Room :<span class="">
+                                                                    {{$Basel1->room}}
+                                                                </span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <p class="mb-0 text-gray-700">Session : <span class="">
+                                                            {{$Basel1->title_ses}}</span></p>
+                                                    <p class="text-gray-700">Moderator : <span class="">
+                                                            {{$Basel1->moderator}}
                                                         </span></p>
                                                     <div class="overflow-x-auto mt-5">
                                                         <table class="table text-gray-700">
