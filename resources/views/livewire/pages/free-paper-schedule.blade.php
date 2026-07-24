@@ -127,7 +127,7 @@
                     @endforelse
                 </tbody>
             </table>
-            {{ $paperSchedules->links() }}
+            {{ $paperSchedules->links('components.pagination-daisyui') }}
         </div>
 
     </section>
