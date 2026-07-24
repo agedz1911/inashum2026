@@ -31,7 +31,7 @@
             class="{{ request()->is('program-at-glance') || request()->is('topics') || request()->is('scientific-schedule') ? 'text-[#b9608d]' : 'text-[#302b88]' }} hover:cursor-pointer hover:text-[#b9608d]">
             Scientific Program <i class="fa-solid fa-angle-down"></i></div>
         <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box gap-2 w-60 p-2 shadow-sm">
-            
+
             <li>
                 <a href="/program-at-glance" wire:navigate
                     class="{{ request()->is('program-at-glance') ? 'text-[#b9608d]' : '' }} justify-between hover:text-[#b9608d]">Program
@@ -45,7 +45,7 @@
             {{-- <li>
                 <a href="#" wire:navigate
                     class="{{ request()->is('topics') ? 'text-[#b9608d]' : '' }} justify-between hover:text-[#b9608d]">
-                    Program Book <i class="fa-solid fa-angle-right"></i></a>
+            Program Book <i class="fa-solid fa-angle-right"></i></a>
             </li> --}}
     </div>
 
@@ -60,21 +60,21 @@
             class="{{ request()->is('accommodation') ? 'text-[#b9608d]' : 'text-[#302b88]' }} hover:text-[#b9608d] hover:underline">Accommodation
         </a>
     </li>
-    
+
     <div class="dropdown dropdown-hover">
         <div tabindex="0"
             class="{{ request()->is('submission')  || request()->is('presentation-schedule')  ? 'text-[#b9608d]' : 'text-[#302b88]' }} hover:cursor-pointer hover:text-[#b9608d]">
             Free Paper <i class="fa-solid fa-angle-down"></i></div>
         <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box gap-2 w-60 p-2 shadow-sm">
-            {{-- <li>
+            <li>
                 <a href="/presentation-schedule" wire:navigate
                     class="{{ request()->is('presentation-schedule') ? 'text-[#b9608d]' : '' }} justify-between hover:text-[#b9608d]">
                     Free Paper Schedule <i class="fa-solid fa-angle-right"></i></a>
             </li>
             <li>
-                <a href="#"
+                <a href="https://expo.virconex-id.com/eposter/inashum_2026/auth/login.php" target="_blank"
                     class="justify-between hover:text-[#b9608d]">Free Paper Presentation Submission <i class="fa-solid fa-angle-right"></i></a>
-            </li> --}}
+            </li>
             <li>
                 <a href="/submission" wire:navigate
                     class="{{ request()->is('submission') ? 'text-[#b9608d]' : '' }} justify-between hover:text-[#b9608d]">Abstract Submission<i class="fa-solid fa-angle-right"></i></a>
@@ -93,7 +93,7 @@
             {{-- <li>
                 <a href="/visiting"
                     class="{{ request()->is('visiting#venue') ? 'text-[#b9608d]' : '' }} justify-between hover:text-[#b9608d]">Conference Venue <i class="fa-solid fa-angle-right"></i></a>
-            </li> 
+            </li>
             <li>
                 <a href="/social-program" wire:navigate
                     class="{{ request()->is('social-program') ? 'text-[#b9608d]' : '' }} justify-between hover:text-[#b9608d]">Social Program <i class="fa-solid fa-angle-right"></i></a>

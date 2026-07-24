@@ -68,7 +68,7 @@ class FreePaperSchedule extends Component
                 $subQuery->where('code_abstract', 'like', '%' . $this->search . '%')
                     ->orWhere('name_participant', 'like', '%' . $this->search . '%')
                     ->orWhere('title', 'like', '%' . $this->search . '%')
-                    ->orWhere('institution', 'like', '%' . $this->search . '%')
+                    // ->orWhere('institution', 'like', '%' . $this->search . '%')
                     ->orWhereHas('paperCategory', function ($q) {
                         $q->where('name', 'like', '%' . $this->search . '%');
                     });

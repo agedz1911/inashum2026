@@ -1,12 +1,12 @@
 <div>
     <section class="breadcrumbs relative pb-0">
-        {{-- <div class="absolute inset-0 bg-gradient-to-b from-[#008068]/80 to-[#78c9bb]/10"></div> --}}
+        <div class="absolute inset-0 bg-gradient-to-t from-[#302b88]/80 to-[#b9608d]/10"></div>
         <div class="py-16 lg:py-28 text-center relative">
-            <h2 class="text-accent uppercase text-2xl font-semibold tracking-wide lg:text-4xl">Free Paper Schedule</h2>
+            <h2 class=" uppercase text-2xl font-bold tracking-wide lg:text-4xl">Free Paper Schedule</h2>
         </div>
     </section>
 
-    <section class="px-5 md:px-10 pt-0 pb-10 md:py-20">
+    {{-- <section class="px-5 md:px-10 pt-0 pb-10 md:py-20">
         <div class="mt-10">
             <div class="text-center lg:text-start mb-5 md:mb-10">
                 <p class="mb-1 kuning">Free Paper</p>
@@ -23,11 +23,11 @@
             </div>
             @endforeach
         </div>
-    </section>
+    </section> --}}
 
     <section class="px-5 md:px-10 py-10 md:py-20">
         <div class="text-center lg:text-start mb-5">
-            <p class="mb-1 kuning">Free Paper</p>
+            {{-- <p class="mb-1 kuning">Free Paper</p> --}}
             <h2 class="mb-2 uppercase text-3xl font-semibold">Free Paper<span class="text-[#008068]"> Schedule</span>
             </h2>
         </div>
@@ -42,12 +42,12 @@
                                     All Categories
                                 </a>
                             </li>
-                            <li><a href="#" wire:click.prevent="filterByCategory('Podium Presentation')" class="{{ $selectedCategory == 'Podium Presentation' ? 'text-[#008068]' : '' }}">
-                                    Podium Presentation
+                            <li><a href="#" wire:click.prevent="filterByCategory('Oral Presentation')" class="{{ $selectedCategory == 'Oral Presentation' ? 'text-[#008068]' : '' }}">
+                                    Oral Presentation
                                 </a>
                             </li>
-                            <li><a href="#" wire:click.prevent="filterByCategory('Moderated e-Poster')" class="{{ $selectedCategory == 'Moderated e-Poster' ? 'text-[#008068]' : '' }}">
-                                    Moderated e-Poster
+                            <li><a href="#" wire:click.prevent="filterByCategory('Moderated Poster')" class="{{ $selectedCategory == 'Moderated Poster' ? 'text-[#008068]' : '' }}">
+                                    Moderated Poster
                                 </a>
                             </li>
                             <li><a href="#" wire:click.prevent="filterByCategory('Unmoderated Poster')" class="{{ $selectedCategory == 'Unmoderated Poster' ? 'text-[#008068]' : '' }}">
@@ -86,9 +86,9 @@
                         <th scope="col">#</th>
                         <th scope="col">Name</th>
                         <th scope="col">Category</th>
-                        <th scope="col">Title</th>
-                        <th scope="col">Insitution</th>
-                        <th scope="col">Country</th>
+                        <th style="width: 30%" scope="col">Title</th>
+                        {{-- <th scope="col">Insitution</th>
+                        <th scope="col">Country</th> --}}
                         <th scope="col">Date</th>
                         <th scope="col">Time</th>
                         <th scope="col">Room</th>
@@ -100,17 +100,17 @@
                         <td>{{$paper->code_abstract}}</td>
                         <td>{{$paper->name_participant}}</td>
                         <td>
-                            @if ($paper->paperCategory->name == 'Podium Presentation')
+                            @if ($paper->paperCategory->name == 'Oral Presentation')
                             <span class="badge badge-success">{{$paper->paperCategory->name}}</span>
-                            @elseif ($paper->paperCategory->name == 'Moderated e-Poster')
+                            @elseif ($paper->paperCategory->name == 'Moderated Poster')
                             <span class="badge bg-info">{{$paper->paperCategory->name}}</span>
                             @elseif ($paper->paperCategory->name == 'Unmoderated Poster')
                             <span class="badge bg-warning">{{$paper->paperCategory->name}}</span>
                             @endif
                         </td>
                         <td>{{$paper->title}}</td>
-                        <td>{{$paper->institution}}</td>
-                        <td>{{$paper->country}}</td>
+                        {{-- <td>{{$paper->institution}}</td>
+                        <td>{{$paper->country}}</td> --}}
                         <td>{{ \Carbon\Carbon::parse($paper->date_presenter)->Format('d F Y') }}</td>
                         <td>{{$paper->time_presenter}}</td>
                         <td>{{$paper->room}}</td>

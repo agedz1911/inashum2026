@@ -8,7 +8,7 @@
         <li>
             <a href="/welcome-message" wire:navigate
                 class="{{ request()->is('welcome-message') ? 'text-[#b9608d]' : '' }} justify-between font-normal hover:text-[#b9608d] after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-[#b9608d] hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Welcome Message
-                 <i class="fa-solid fa-angle-right"></i></a>
+                <i class="fa-solid fa-angle-right"></i></a>
         </li>
         <li>
             <a href="/organizing-committee" wire:navigate
@@ -33,7 +33,7 @@
         {{-- <li>
             <a href="#" wire:navigate
                 class="{{ request()->is('topics') ? 'text-[#b9608d]' : '' }} justify-between font-normal hover:text-[#b9608d] after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-[#b9608d] hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">
-                program Book <i class="fa-solid fa-angle-right"></i></a>
+        program Book <i class="fa-solid fa-angle-right"></i></a>
         </li> --}}
         <li>
             <a href="/registration" wire:navigate
@@ -45,16 +45,16 @@
                 class="{{ request()->is('accommodation') ? 'text-[#b9608d]' : '' }} justify-between font-normal hover:text-[#b9608d] after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-[#b9608d] hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Accommodation
                 <i class="fa-solid fa-angle-right"></i></a>
         </li>
-        {{-- <li>
+        <li>
             <a href="/presentation-schedule" wire:navigate
                 class="{{ request()->is('presentation-schedule') ? 'text-[#b9608d]' : '' }} justify-between font-normal hover:text-[#b9608d] after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-[#b9608d] hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Free Paper Schedule
                 <i class="fa-solid fa-angle-right"></i></a>
         </li>
         <li>
-            <a href="#" 
-                class=" justify-between font-normal hover:text-[#b9608d] after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-[#b9608d] hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Free Paper Presentation Submission 
+            <a href="https://expo.virconex-id.com/eposter/inashum_2026/auth/login.php" target="_blank"
+                class=" justify-between font-normal hover:text-[#b9608d] after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-[#b9608d] hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Free Paper Presentation Submission
                 <i class="fa-solid fa-angle-right"></i></a>
-        </li> --}}
+        </li>
         <li>
             <a href="/submission" wire:navigate
                 class="{{ request()->is('submission') ? 'text-[#b9608d]' : '' }} justify-between font-normal hover:text-[#b9608d] after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-[#b9608d] hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Abstract Submission
@@ -68,7 +68,7 @@
         {{-- <li>
             <a href="/visiting#venue" 
                 class="{{ request()->is('visiting') ? 'text-[#b9608d]' : '' }} justify-between font-normal hover:text-[#b9608d] after:content-[''] relative after:absolute flex items-center hover:after:items-center transition-all after:transition-all duration-300 after:duration-300 after:bg-[#b9608d] hover:ps-3 after:left-0 after:h-0 hover:after:h-[5px] after:w-0 hover:after:w-[5px] after:rounded-full">Conference Venue
-                <i class="fa-solid fa-angle-right"></i></a>
+        <i class="fa-solid fa-angle-right"></i></a>
         </li>
         <li>
             <a href="/social-program" wire:navigate
